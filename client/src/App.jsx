@@ -5,7 +5,7 @@ import AboutPage from './pages/about/AboutPage'
 import ServicePage from './pages/services/ServicePage'
 import ContactPage from './pages/contact/ContactPage'
 import SchedulePage from './pages/schedule/SchedulePage'
-import Footer from './footer/footer'
+import Footer from './footer/Footer'
 
 function App() {
 
