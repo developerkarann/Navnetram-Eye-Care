@@ -6,21 +6,23 @@ import ServicePage from './pages/services/ServicePage'
 import ContactPage from './pages/contact/ContactPage'
 import SchedulePage from './pages/schedule/SchedulePage'
 import Footer from './footer/Footer'
+import Navbar from './components/Navbar'
+import Service from './pages/service/Service'
+import Testimonials from './pages/testimonials/Testimonials'
 
 function App() {
 
   return (
     <>
+    <Navbar/>
+      <div className="min-h-screen bg-gradient-to-r from-blue-100 to-white ">
       <HomePage />
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white ">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <AboutPage />
-
+          <Service/>
           <ServicePage />
-          <ContactPage />
-          <SchedulePage />
+          <Testimonials/>
 
-        </div>
+          <AboutPage />
+          <ContactPage />
         <Footer/>
       </div>
     </>

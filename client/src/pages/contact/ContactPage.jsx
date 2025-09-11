@@ -1,4 +1,4 @@
-import { Activity, Blend, Bone, Brain, Calendar, Eye, Glasses, Pipette, ScanEye } from 'lucide-react';
+import { Activity, Blend, Bone, Brain, Calendar, Eye, Glasses, MailPlus, MapPinHouse, Phone, Pipette, ScanEye } from 'lucide-react';
 import { useState } from 'react';
 const ContactPage = () => {
 
@@ -37,198 +37,100 @@ const ContactPage = () => {
         });
     };
 
-       const services = [
-        {
-            icon: <Blend className="w-8 h-8 text-blue-600" />,
-            title: " Cataract & Lens Surgery",
-            description: "Advanced surgical solutions for cataract and lens correction. Includes Phaco, MICS, SICS, and ICL surgeries.    ",
-            duration: "45 mins",
-            price: "$150"
-        },
-        {
-            icon: <Brain className="w-8 h-8 text-blue-600" />,
-            title: "LASIK & Vision Correction",
-            description: "Modern laser treatments for refractive errors. Covers LASIK, SMILE, CLEAR, and ICL procedures.",
-            duration: "60 mins",
-            price: "$200"
-        },
-        {
-            icon: <Eye className="w-8 h-8 text-blue-600" />,
-            title: "Cornea & Transplant Services",
-            description: "Specialized care for corneal conditions and transplants.PKP, ALK, EK, and management of corneal infections.",
-            duration: "30 mins",
-            price: "$100"
-        },
-        {
-            icon: <Bone className="w-8 h-8 text-blue-600" />,
-            title: "Refractive Error Management",
-            description: "Accurate diagnosis and correction of vision issues.Glasses, contact lenses, lazy eye, and myopia control.",
-            duration: "40 mins",
-            price: "$120"
-        },
-        {
-            icon: <ScanEye className="w-8 h-8 text-blue-600" />,
-            title: " Eye Surface & Allergy Treatment",
-            description: "Relief from dry eyes, allergies, and pink eye.Also covers Computer Vision Syndrome and Uveitis.",
-            duration: "40 mins",
-            price: "$120"
-        },
-        {
-            icon: <Pipette className="w-8 h-8 text-blue-600" />,
-            title: "Injections & Eye Surface Repair",
-            description: "Minimally invasive treatments for eye health.Includes SLET, AMG, and various eye injections.",
-            duration: "40 mins",
-            price: "$120"
-        },
-        {
-            icon: <Glasses className="w-8 h-8 text-blue-600" />,
-            title: "Glasses & Contact Lens Fitting",
-            description: "Precise fitting and vision improvement solutions.Includes standard and cosmetic lenses, orthokeratology.",
-            duration: "40 mins",
-            price: "$120"
-        },
-        {
-            icon: <Activity className="w-8 h-8 text-blue-600" />,
-            title: "Ayushmann & Panel Patients",
-            description: "Consultation and surgery under government panels. Covers CGHS, ECHS, and Ayushman Bharat schemes.",
-            duration: "40 mins",
-            price: "$120"
-        },
-       
-    ];
-
-        const timeSlots = [
-        "09:00 AM", "10:00 AM", "11:00 AM", "02:00 PM", "03:00 PM", "04:00 PM"
-    ];
-
 
     return (
         <>
-            <section className="relative overflow-hidden rounded-xl shadow-2xl" id='contact'>
-                <div className="absolute inset-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=800&fit=crop&crop=center"
-                        alt="Medical Background"
-                        className="w-full h-full object-cover opacity-10"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-white/90"></div>
-                </div>
-                <div className="relative z-10 bg-white/95 backdrop-blur-sm p-8">
+            <section className=" overflow-hidden rounded-xl max-w-7xl bg-white/95 mb-25 m-auto shadow-2xl" id='contact'>
+                <div className="relative z-10  backdrop-blur-sm p-8">
                     <div className="text-center mb-8">
                         <h2 className="text-4xl font-bold text-gray-800 mb-4">Book Your Appointment</h2>
-                        <p className="text-gray-600 text-lg">Schedule your consultation with Dr. Johnson today</p>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+                        <p className="text-gray-600 text-lg">Schedule your consultation with Dr. Rinky Agarwal</p>
+                        <div className="w-30 h-0.5 bg-blue-500 mx-auto mt-4 rounded-full"></div>
                     </div>
 
+                    <div className=" grid grid-cols-1 lg:grid-cols-2 gap-16 items-center md:px-20">
 
-                    <div className="max-w-4xl mx-auto">
-                        <div className="grid md:grid-cols-2 gap-6 mb-6">
+                        <div className='colum left '>
+                            <div className="details flex flex-col gap-5">
+                                <div className="group  bg-blue-500 backdrop-blur-sm p-2 rounded-2xl border border-blue-500 hover:border-blue-500/60 transition-all duration-500 transform hover:-translate-y-2" >
+                                    <div className="flex items-center space-x-5 ">
+                                        <div className={`w-16 h-16 bg-gradient-to-r  rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
+                                            <div className="text-white text-xl"><MapPinHouse size={30} /></div>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-white font-bold text-lg mb-1">Location</h4>
+                                            <p className="text-gray-50">R-20, Sector 11, Noida, Uttar Pradesh, 201301</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                     <a href="mailto:dr.rinky@navnetram.com">
+                                    <div className="group bg-blue-500 backdrop-blur-sm p-2 rounded-2xl border border-blue-500 hover:border-blue-500/60 transition-all duration-500 transform hover:-translate-y-2" >
+                                        <div className="flex items-center space-x-6">
+                                            <div className={`w-16 h-16 bg-gradient-to-r  rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
+                                                <div className="text-white text-xl"><MailPlus size={30} /></div>
+                                            </div>
+                                            <div>
+                                                <h4 className="text-white font-bold text-lg mb-1">Email</h4>
+                                                <p className="text-gray-50 text-lg">dr.rinky@navnetram.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <div className="group bg-blue-500 backdrop-blur-sm p-2 rounded-2xl border border-blue-500 hover:border-blue-500/60 transition-all duration-500 transform hover:-translate-y-2" >
+                                    <div className="flex items-center space-x-6">
+                                        <div className={`w-16 h-16 bg-gradient-to-r  rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
+                                            <div className="text-white text-lg"><Phone size={30} /></div>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-white font-bold text-lg mb-1">Contact</h4>
+                                            <p className="text-gray-50 text-lg">+91 9310767259</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="map">
+
+                            </div>
+                        </div>
+
+                        <div className=" colum right space-y-3">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                    placeholder="Enter your full name"
+                                <input type="text" name="name" value={formData.name} onChange={handleInputChange} required
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white/80 " placeholder="Enter your full name"
                                 />
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                    placeholder="Enter your email"
+                                <input type="email" name="email" value={formData.email} onChange={handleInputChange} required
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg  bg-white/80 " placeholder="Enter your email"
                                 />
                             </div>
-                        </div>
 
-                        <div className="grid md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                    placeholder="Enter your phone number"
+                                <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg  bg-white/80  " placeholder="Enter your phone number"
                                 />
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Service Type *</label>
-                                <select
-                                    name="service"
-                                    value={formData.service}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
+
+                            <div className="mb-6">
+                                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea name="message" value={formData.message} onChange={handleInputChange} rows={4}
+                                    className="w-full px-4 py-3 border border-gray-300  rounded-lg  bg-white/80 " placeholder="Please describe your symptoms or concerns (optional)"
+                                ></textarea>
+                            </div>
+
+                            <div className="text-center">
+                                <button
+                                    onClick={handleSubmit}
+                                    className="bg-gradient-to-r cursor-pointer from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-10 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 mx-auto transform hover:scale-105 shadow-lg hover:shadow-xl"
                                 >
-                                    <option value="">Select a service</option>
-                                    {services.map((service, index) => (
-                                        <option key={index} value={service.title}>{service.title}</option>
-                                    ))}
-                                </select>
+                                    <Calendar className="w-5 h-5" />
+                                    <span>Book Appointment</span>
+                                </button>
                             </div>
-                        </div>
-
-                        <div className="grid md:grid-cols-2 gap-6 mb-6">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Date *</label>
-                                <input
-                                    type="date"
-                                    name="date"
-                                    value={formData.date}
-                                    onChange={handleInputChange}
-                                    required
-                                    min={new Date().toISOString().split('T')[0]}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Preferred Time *</label>
-                                <select
-                                    name="time"
-                                    value={formData.time}
-                                    onChange={handleInputChange}
-                                    required
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                >
-                                    <option value="">Select a time</option>
-                                    {timeSlots.map((time, index) => (
-                                        <option key={index} value={time}>{time}</option>
-                                    ))}
-                                </select>
-                            </div>
-                        </div>
-
-                        <div className="mb-6">
-                            <label className="block text-sm font-medium text-gray-700 mb-2">Additional Message</label>
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleInputChange}
-                                rows={4}
-                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white/80 backdrop-blur-sm"
-                                placeholder="Please describe your symptoms or concerns (optional)"
-                            ></textarea>
-                        </div>
-
-                        <div className="text-center">
-                            <button
-                                onClick={handleSubmit}
-                                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-4 px-10 rounded-lg transition-all duration-200 flex items-center justify-center space-x-2 mx-auto transform hover:scale-105 shadow-lg hover:shadow-xl"
-                            >
-                                <Calendar className="w-5 h-5" />
-                                <span>Book Appointment</span>
-                            </button>
                         </div>
                     </div>
                 </div>
