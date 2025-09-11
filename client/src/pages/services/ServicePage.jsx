@@ -70,7 +70,7 @@ const ServicePage = () => {
                                     <div key={index} class="relative w-[400px] h-[350px] overflow-hidden shadow mb-10 hover:cursor-pointer hover:scale-105 duration-300">
 
                                         <div class="absolute inset-0">
-                                            <img src={service.image} alt="Surgery" class="w-full h-full object-cover opacity-35" />
+                                            <img src={service.image} alt="Surgery" class="w-full h-full object-cover opacity-25" />
                                         </div>
 
 
