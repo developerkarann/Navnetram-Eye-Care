@@ -40,10 +40,10 @@ const ContactPage = () => {
 
     return (
         <>
-            <section className=" overflow-hidden rounded-xl max-w-7xl bg-white/95 mb-25 m-auto shadow-2xl" id='contact'>
-                <div className="relative z-10  backdrop-blur-sm p-8">
+            <section className=" overflow-hidden rounded-xl max-w-7xl mb-25 m-auto shadow-2xl" id='contact'>
+                <div className="relative z-10  backdrop-blur-sm py-8 px-4">
                     <div className="text-center mb-8">
-                        <h2 className="text-4xl font-bold text-gray-800 mb-4">Book Your Appointment</h2>
+                        <h2 className="text-4xl  font-bold text-gray-800 mb-4">Book Your Appointment</h2>
                         <p className="text-gray-600 text-lg">Schedule your consultation with Dr. Rinky Agarwal</p>
                         <div className="w-30 h-0.5 bg-blue-500 mx-auto mt-4 rounded-full"></div>
                     </div>

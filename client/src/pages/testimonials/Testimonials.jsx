@@ -33,7 +33,7 @@ const Testimonials = () => {
 
             </div>
             <div className="relative flex flex-col items-center">
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                     {
                         reviews?.map((item, i) => (
                             <div className="bg-white shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full transition-all duration-500">

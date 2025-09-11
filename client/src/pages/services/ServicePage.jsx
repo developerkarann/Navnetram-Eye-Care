@@ -55,13 +55,13 @@ const ServicePage = () => {
             {/* Services Section */}
             <section className="mb-8 relative px-2 md:px-10" id='services'>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white rounded-2xl"></div>
-                <div className="relative z-10 p-8">
+                <div className="relative z-10 py-8 px-2">
                     <div className="text-center mb-25" >
                         <h2 className=" text-4xl md:text-5xl text-blue-500 mb-4">Our Services</h2>
                         <div className="w-20 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
-                        <p className="text-gray-900 text-3xl md:text-5xl">Comprehensive eye care services tailored to your needs</p>
+                        <p className="text-gray-900 text-3xl md:text-5xl">Comprehensive eye care services in Noida</p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3  gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
                         {services.map((service, index) => {
 
                             return (

@@ -5,10 +5,10 @@ const AboutPage = () => {
     return (
         <>
             {/* Doctor Profile Section */}
-            <section className="bg-white max-w-7xl m-auto rounded-lg shadow-xl p-8 py-15 mt-20 mb-50 relative overflow-hidden" id='about'>
+            <section className=" max-w-7xl m-auto rounded-lg shadow-2xl p-8 py-15 mt-20 mb-30 relative overflow-hidden" id='about'>
                 <div className="text-center mb-15">
-                    <h2 className="text-4xl  text-gray-800 mb-4">About Dr. Rinky Agarwal</h2>
-                    <div className="w-50 h-0.5 bg-gray-500 mx-auto mt-2 mb-5"></div>
+                    <h2 className="text-5xl  text-blue-600 mb-4">About Us</h2>
+                    <div className="w-20 h-0.5 bg-blue-500 mx-auto mt-2 mb-5"></div>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8 relative z-10">
                     <div className="md:col-span-1">
