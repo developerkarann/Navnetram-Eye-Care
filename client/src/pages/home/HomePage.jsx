@@ -9,7 +9,7 @@ const HomePage = () => {
            
             {/* Hero Section */}
             {/* <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden"> */}
-            <section className="relative min-h-screen  overflow-hidden">
+            <section className="relative min-h-screen bg-gradient-to-r from-blue-100 to-white overflow-hidden">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-20 left-20 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -49,7 +49,7 @@ const HomePage = () => {
                                 </button> */}
                                 <a href="#contact">
                                     <button className="border-2 cursor-pointer border-gray-400 hover:border-gray-700 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
-                                        BOOK A APPOINTMENT
+                                        BOOK APPOINTMENT
                                     </button>
                                 </a>
                             </div>

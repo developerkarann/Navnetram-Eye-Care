@@ -25,11 +25,12 @@ const Testimonials = () => {
 
 
     return (
-        <div className="w-full px-6 bg-gradient-to-r from-blue-100 to-white py-10 pb-30">
+        // <div className="w-full px-6 bg-gradient-to-r from-blue-100 to-white py-10 pb-30">
+        <div className="w-full px-6 bg-white py-10 pb-30">
             <div className="mb-20 gap-10">
-                <h2 className=" text-4xl md:text-5xl text-center mb-2 text-blue-600">Our Success </h2>
+                <h2 className=" text-4xl md:text-5xl font-semibold text-center mb-2 text-gray-800">Our Success </h2>
                 <div className="w-20 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
-                <h1 className="text-3xl sm:text-6xl text-center mb-8">Real Experiences, Real Success</h1>
+                <h1 className="text-3xl sm:text-5xl text-center mb-8">Real Experiences, Real Success</h1>
 
             </div>
             <div className="relative flex flex-col items-center">

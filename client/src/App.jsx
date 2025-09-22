@@ -14,17 +14,17 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-      <div className="min-h-screen bg-gradient-to-r from-blue-100 to-white ">
-      <HomePage />
-          <Service/>
-          <ServicePage />
-          <Testimonials/>
-
-          <AboutPage />
-          <ContactPage />
-        <Footer/>
-      </div>
+      <Navbar />
+      {/* <div className="min-h-screen bg-gradient-to-r from-blue-100 to-white "> */}
+        <HomePage />
+        <Service />
+        <ServicePage />
+        <Testimonials />
+         
+        {/* <AboutPage /> */}
+        <ContactPage />
+        <Footer />
+      {/* </div> */}
     </>
   )
 }

@@ -53,8 +53,9 @@ const ServicePage = () => {
     return (
         <>
             {/* Services Section */}
-            <section className="mb-8 relative px-2 md:px-10" id='services'>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white rounded-2xl"></div>
+            <section className="mb-8 relative px-2 md:px-10 bg-[#f0f0ff]" id='services'>
+                {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white rounded-2xl"></div> */}
+
                 <div className="relative z-10 py-8 px-2">
                     <div className="text-center mb-25" >
                         <h2 className=" text-4xl md:text-5xl text-blue-500 mb-4">Our Services</h2>
@@ -63,20 +64,14 @@ const ServicePage = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
                         {services.map((service, index) => {
-
                             return (
                                 <>
 
-                                    <div key={index} class="relative w-[400px] h-[350px] overflow-hidden shadow mb-10 hover:cursor-pointer hover:scale-105 duration-300">
-
-                                        <div class="absolute inset-0">
-                                            <img src={service.image} alt="Surgery" class="w-full h-full object-cover opacity-25" />
-                                        </div>
-
-
-                                        <div class="relative z-10 p-6 flex flex-col justify-center h-full">
-                                            <h2 class="text-3xl  text-gray-800">{service.title}</h2>
-                                            <p class="mt-6 text-gray-800 text-lg">
+                                    <div key={index} class=" w-[400px] h-[400px]  mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                                        <img src={service.image} alt="Surgery" class="w-full h-[250px] rounded object-cover" />
+                                        <div class="flex flex-col justify-center p-3">
+                                            <h2 class="text-2xl font-semibold text-gray-800">{service.title}</h2>
+                                            <p class="mt-2 text-gray-800 text-lg">
                                                 {service.description}
                                             </p>
                                         </div>

@@ -14,10 +14,6 @@ const Navbar = () => {
                             <div className="transition-transform duration-300">
                                 <img src="/logo2.jpeg" className='w-70' alt="" />
                             </div>
-                            {/* <div className=''>
-                                <h1 className="text-2xl font-bold text-gray-800">NAVNETRAM</h1>
-                                <p className="text-gray-700 text-lg mt-[-5px] ">Advanced Eye Care</p>
-                            </div> */}
                         </div>
 
                         {/* Desktop Navigation */}
@@ -79,7 +75,7 @@ const Navbar = () => {
                             className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
                             onClick={() => setMobileMenuOpen(false)}
                         >
-                            BOOK A APPOINTMENT
+                            BOOK APPOINTMENT
                         </a>
                     </div>
                 </div>

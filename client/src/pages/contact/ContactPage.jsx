@@ -1,4 +1,4 @@
-import { Activity, Blend, Bone, Brain, Calendar, Eye, Glasses, MailPlus, MapPinHouse, Phone, Pipette, ScanEye } from 'lucide-react';
+import { Calendar, MailPlus, MapPinHouse, Phone } from 'lucide-react';
 import { useState } from 'react';
 const ContactPage = () => {
 
@@ -40,7 +40,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <section className=" overflow-hidden rounded-xl max-w-7xl mb-25 m-auto shadow-2xl" id='contact'>
+            <section className=" overflow-hidden rounded-xl mb-25 m-auto" id='contact'>
                 <div className="relative z-10  backdrop-blur-sm py-8 px-4">
                     <div className="text-center mb-8">
                         <h2 className="text-4xl  font-bold text-gray-800 mb-4">Book Your Appointment</h2>
@@ -51,7 +51,29 @@ const ContactPage = () => {
                     <div className=" grid grid-cols-1 lg:grid-cols-2 gap-16 items-center md:px-20">
 
                         <div className='colum left '>
-                            <div className="details flex flex-col gap-5">
+                            <div className="box">
+                                <div className='mb-10'>
+                                    <h4 className="text-gray-800 font-bold text-4xl mb-4">Connect with us</h4>
+                                    <p className="text-gray-600 text-xl">Visit Navnetram Advanced Eye Care for expert eye services in Noida, 
+                                        dedicated to enhancing your vision and overall eye health.</p>
+                                </div>
+                                <div className="flex flex-col space-x-5 gap-5">
+                                    <div>
+                                        <h4 className="text-gray-800 font-semibold text-xl">Address</h4>
+                                        <p className="text-gray-600 text-lg">R-20, Sector 11, Noida, Uttar Pradesh, 201301</p>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-gray-800 font-semibold text-xl">Call us</h4>
+                                        <p className="text-gray-600 text-lg">+91 9310767259</p>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-gray-800 font-semibold text-xl">Email</h4>
+                                        <p className="text-gray-600 text-lg">dr.rinky@navnetram.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* <div className="details flex flex-col gap-5">
                                 <div className="group  bg-blue-500 backdrop-blur-sm p-2 rounded-2xl border border-blue-500 hover:border-blue-500/60 transition-all duration-500 transform hover:-translate-y-2" >
                                     <div className="flex items-center space-x-5 ">
                                         <div className={`w-16 h-16 bg-gradient-to-r  rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-all duration-300`}>
@@ -91,10 +113,16 @@ const ContactPage = () => {
                             </div>
                             <div className="map">
 
-                            </div>
+                            </div> */}
                         </div>
 
+
                         <div className=" colum right space-y-3">
+                            <div className="map">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.029716981564!2d77.33556879999999!3d28.5988853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b32a284b1f%3A0xf41ee03a672056c7!2sNavnetram%20Advanced%20Eye%20Care!5e0!3m2!1sen!2sin!4v1758554911601!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        {/* <div className=" colum right space-y-3">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
                                 <input type="text" name="name" value={formData.name} onChange={handleInputChange} required
@@ -131,7 +159,7 @@ const ContactPage = () => {
                                     <span>Book Appointment</span>
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
