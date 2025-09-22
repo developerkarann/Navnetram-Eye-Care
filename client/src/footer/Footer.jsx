@@ -41,10 +41,10 @@ export default function Footer() {
                                 <img src="/logo.png" className='w-100' alt="" />
                                 {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
                             </div>
-                            <p className="text-gray-300 text-xl leading-relaxed">
+                            <p className="text-gray-300 text-base md:text-xl py-5 leading-relaxed">
                                 Expert primary eye care for clearer vision and healthier eyes. Visit Navnetram Advanced Eye Care for personalized treatment and trusted solutions.
                             </p>
-                            <div className="flex space-x-6">
+                            <div className="flex space-x-6 mb-5 md:mb-0">
                                 {socialLinks.map((social, index) => (
                                     <a
                                         key={index}
@@ -59,7 +59,7 @@ export default function Footer() {
                         </div>
 
                         {/* Quick Links */}
-                        <div className="space-y-4 md:flex md:flex-col items-center">
+                        <div className="space-y-4 md:flex md:flex-col items-center mb-10 md:mb-0 ">
                             <h4 className="text-2xl mb-5 font-semibold text-white">Quick Links</h4>
                             <ul className="space-y-4">
                                 {quickLinks.map((link, index) => (
