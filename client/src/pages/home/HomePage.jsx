@@ -48,7 +48,7 @@ const HomePage = () => {
                                     <span> <a href="#contact">  BOOK APPOINTMENT</a></span>
                                 </button> */}
                                 <a href="#contact">
-                                    <button className="border-2 cursor-pointer border-gray-400 hover:border-gray-700 text-gray-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
+                                    <button className=" bg-gradient-to-r from-blue-500 to-blue-600 text-white cursor-pointer shadow px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:bg-white/10 backdrop-blur-sm">
                                         BOOK APPOINTMENT
                                     </button>
                                 </a>
@@ -58,15 +58,15 @@ const HomePage = () => {
                             <div className="grid grid-cols-3 gap-8 pt-8">
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-blue-400">10+</div>
-                                    <div className="text-gray-300 text-sm">Years Experience</div>
+                                    <div className="text-gray-700 text-sm">Years Experience</div>
                                 </div>
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-blue-400">2.5K+</div>
-                                    <div className="text-gray-300 text-sm">Happy Patients</div>
+                                    <div className="text-gray-700 text-sm">Happy Patients</div>
                                 </div>
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-blue-400">98%</div>
-                                    <div className="text-gray-300 text-sm">Success Rate</div>
+                                    <div className="text-gray-700 text-sm">Success Rate</div>
                                 </div>
                             </div>
                         </div>

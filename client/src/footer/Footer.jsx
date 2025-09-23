@@ -42,7 +42,7 @@ export default function Footer() {
                                 {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
                             </div>
                             <p className="text-gray-300 text-base md:text-xl py-5 leading-relaxed">
-                                Expert primary eye care for clearer vision and healthier eyes. Visit Navnetram Advanced Eye Care for personalized treatment and trusted solutions.
+                                Your eyes deserve the best care. At Navnetram Advanced Eye Care, we combine advanced technology with personalized treatment to protect your vision and support lifelong eye health
                             </p>
                             <div className="flex space-x-6 mb-5 md:mb-0">
                                 {socialLinks.map((social, index) => (
@@ -99,7 +99,7 @@ export default function Footer() {
                             <div className="pt-4">
                                 <a
                                     href="#contact"
-                                    className="inline-flex text-xl items-center w-full bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
+                                    className="inline-flex text-xl items-center bg-gradient-to-r w-full from-gray-800 to-gray-900 hover:from-blue-700 hover:to-blue-700 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
                                 >
                                     Book Appointment
                                 </a>

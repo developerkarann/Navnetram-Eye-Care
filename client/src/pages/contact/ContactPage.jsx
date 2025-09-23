@@ -54,21 +54,20 @@ const ContactPage = () => {
                             <div className="box">
                                 <div className=' mb-15 md:mb-10'>
                                     <h4 className="text-gray-800 font-bold text-3xl md:text-4xl mb-4">Contact us</h4>
-                                    <p className="text-gray-600 text-base">Visit Navnetram Advanced Eye Care for expert eye services in Noida, 
-                                        dedicated to enhancing your vision and overall eye health.</p>
+                                    <p className="text-gray-600 text-base md:text-lg">Experience world-class eye care at Navnetram Advanced Eye Care, Noida. Our expert ophthalmologists and modern facilities are dedicated to protecting, treating, and enhancing your vision and overall eye health. Schedule your consultation today and take the first step toward clearer, healthier eyesight.</p>
                                 </div>
                                 <div className="flex flex-col space-x-5 gap-8">
                                     <div>
                                         <h4 className="text-gray-800 font-semibold text-xl">Address</h4>
-                                        <p className="text-gray-600 text-base">R-20, Sector 11, Noida, Uttar Pradesh, 201301</p>
+                                        <p className="text-gray-600 text-base md:text-lg">R-20, Sector 11, Noida, Uttar Pradesh, 201301</p>
                                     </div>
                                     <div>
                                         <h4 className="text-gray-800 font-semibold text-xl">Call us</h4>
-                                        <p className="text-gray-600 text-base">+91 9310767259</p>
+                                        <p className="text-gray-600 text-base md:text-lg">+91 9310767259</p>
                                     </div>
                                     <div>
                                         <h4 className="text-gray-800 font-semibold text-xl">Email</h4>
-                                        <p className="text-gray-600 text-base">dr.rinky@navnetram.com</p>
+                                        <p className="text-gray-600 text-base md:text-lg">dr.rinky@navnetram.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -118,10 +117,10 @@ const ContactPage = () => {
 
 
                         <div className=" colum right space-y-3">
-                            <div className="map hidden md:visible">
+                            <div className="map hidden md:block">
                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.029716981564!2d77.33556879999999!3d28.5988853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b32a284b1f%3A0xf41ee03a672056c7!2sNavnetram%20Advanced%20Eye%20Care!5e0!3m2!1sen!2sin!4v1758554911601!5m2!1sen!2sin" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <div className="map visible md:hidden">
+                            <div className="map md:hidden">
                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.029716981564!2d77.33556879999999!3d28.5988853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b32a284b1f%3A0xf41ee03a672056c7!2sNavnetram%20Advanced%20Eye%20Care!5e0!3m2!1sen!2sin!4v1758556276151!5m2!1sen!2sin" width="350" height="250" allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>

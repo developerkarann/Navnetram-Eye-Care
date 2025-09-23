@@ -33,9 +33,9 @@ const Navbar = () => {
                         <div className="hidden md:flex">
                             <a
                                 href="#contact"
-                                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
+                                className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
                             >
-                                BOOK A APPOINTMENT
+                                BOOK APPOINTMENT
                             </a>
                         </div>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
 
                         <a
                             href="#contact"
-                            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
+                            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-600 hover:to-blue-700  duration-500"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             BOOK APPOINTMENT

@@ -58,9 +58,9 @@ const ServicePage = () => {
 
                 <div className="relative z-10 py-8 px-2">
                     <div className="text-center mb-25" >
-                        <h2 className=" text-4xl md:text-5xl text-blue-500 mb-4">Our Services</h2>
+                        <h2 className=" text-4xl md:text-5xl text-gray-800 font-semibold mb-4">Our Services</h2>
                         <div className="w-20 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
-                        <p className="text-gray-900 text-3xl md:text-5xl">Comprehensive eye care services in Noida</p>
+                        <p className="text-gray-900 text-3xl md:text-5xl">Comprehensive Eye Care Services in Noida</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
                         {services.map((service, index) => {
