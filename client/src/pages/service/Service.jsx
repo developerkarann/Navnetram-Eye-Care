@@ -12,7 +12,7 @@ const Service = () => {
                         <div className="content flex flex-col gap-10">
                             <h1 className="title text-3xl font-semibold text-gray-800 md:text-4xl"> Best Advanced Eye Care Services in Noida. </h1>
                             <p className="subtitle  text-lg md:text-xl leading-8">
-                               At Navnetram Advanced Eye Care, we go beyond standard treatment to deliver personalized vision care with compassion and expertise. Located in the heart of Noida, our modern facility is equipped with the latest diagnostic and surgical technology, allowing us to address a wide range of eye conditions including cataracts, glaucoma, refractive errors, and more. Our experienced ophthalmologists take the time to understand each patient’s unique concerns, offering tailored solutions that combine medical excellence with genuine care. For us, protecting and restoring your vision is not just a service—it’s a commitment to enhancing your everyday life.
+                              At Navnetram Advanced Eye Care, we go beyond standard treatment to deliver personalized vision care with compassion and expertise. Located in the heart of Noida, our modern facility is equipped with advanced diagnostic and surgical technology to treat conditions like cataracts, glaucoma, refractive errors, and more. Our experienced ophthalmologists provide tailored solutions that blend medical excellence with genuine care—because restoring and protecting your vision is our commitment to improving everyday life.
                             </p>
                         </div>
                     </div>
