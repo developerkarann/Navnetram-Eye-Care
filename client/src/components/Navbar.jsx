@@ -2,41 +2,63 @@ import React, { useState } from 'react'
 import { Calendar, Menu, Stethoscope, X } from 'lucide-react';
 
 const Navbar = () => {
-      const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const navLinks = [
+        {
+            title: 'Services',
+            link: 'services'
+        },
+        {
+            title: 'Testimonial',
+            link: 'testimonials'
+        },
+        {
+            title: 'About Us',
+            link: 'about'
+        },
+        {
+            title: 'Contact Us',
+            link: 'contact'
+        },
+      
+    ]
     return (
         <>
             {/* <nav className="bg-white shadow-lg sticky top-0 z-50 transition-shadow duration-300"> */}
             <nav className="bg-white z-50 transition-shadow shadow-2xl duration-300">
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="mx-auto px-10">
                     <div className="flex justify-between items-center py-2">
                         {/* Logo */}
                         <div className="flex items-center space-x-3">
                             <div className="transition-transform duration-300">
-                                <img src="/logo2.jpeg" className='w-70' alt="" />
+                                <img src="/logo2.jpeg" className=' w-50 md:w-70' alt="" />
                             </div>
                         </div>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden md:flex items-center space-x-8">
-                            {["home", "about", "services", "contact"].map((item) => (
-                                <a
-                                    key={item}
-                                    href={`#${item}`}
-                                    className="text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium"
-                                >
-                                    {item.toUpperCase()}
-                                </a>
-                            ))}
-                        </div>
+                        <div className='flex gap-5'>
+                            <div className="hidden md:flex items-center space-x-8">
+                                {navLinks.map((item, i) => (
+                                    <a
+                                        key={i}
+                                        href={`#${item.link}`}
+                                        className="text-gray-900 text-xl hover:text-blue-600 transition-colors duration-300 "
+                                    >
+                                        {item.title}
+                                    </a>
+                                ))}
+                            </div>
 
-                        {/* Book Appointment - Desktop */}
-                        <div className="hidden md:flex">
-                            <a
-                                href="#contact"
-                                className="bg-gradient-to-r from-blue-400 to-blue-500 text-white px-6 py-2 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transition-all duration-300"
-                            >
-                                BOOK APPOINTMENT
-                            </a>
+                            {/* Book Appointment - Desktop */}
+                            <div className="hidden md:flex">
+                                <a
+                                    href="#contact"
+                                    className="bg-gradient-to-r from-blue-800 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold  transition-all duration-300"
+                                >
+                                    BOOK APPOINTMENT
+                                </a>
+                            </div>
                         </div>
 
                         {/* Burger Button */}
@@ -45,9 +67,9 @@ const Navbar = () => {
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
                             {mobileMenuOpen ? (
-                                <X className="w-6 h-6 text-gray-600" />
+                                <X className="w-8 h-8 text-gray-600" />
                             ) : (
-                                <Menu className="w-6 h-6 text-gray-600" />
+                                <Menu className="w-8 h-8 text-gray-600" />
                             )}
                         </button>
                     </div>
@@ -55,24 +77,24 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out px-4 ${mobileMenuOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0"
+                    className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out px-4 ${mobileMenuOpen ? "max-h-[350px] opacity-100 py-4" : "max-h-0 opacity-0"
                         }`}
                 >
-                    <div className="flex flex-col space-y-4">
-                        {["home", "about", "services", "contact"].map((item) => (
+                    <div className="flex flex-col items-center pt-5 justify-center space-y-8">
+                        {navLinks.map((item, i) => (
                             <a
-                                key={item}
-                                href={`#${item}`}
-                                className="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium"
+                                key={i}
+                                href={`#${item.link}`}
+                                className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
-                                {item.toUpperCase()}
+                                {item.title.toUpperCase()}
                             </a>
                         ))}
 
                         <a
                             href="#contact"
-                            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-600 hover:to-blue-700  duration-500"
+                            className="bg-gradient-to-r w-full from-blue-800 to-blue-600 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-600 hover:to-blue-700  duration-500"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             BOOK APPOINTMENT

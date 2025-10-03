@@ -33,12 +33,12 @@ export default function Footer() {
 
             {/* Footer */}
             <footer className="">
-                <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div className=" mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* About Section */}
                         <div className="space-y-4">
                             <div>
-                                <img src="/logo.png" className='w-100' alt="" />
+                                <img src="/logo.png" className='w-80' alt="" />
                                 {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
                             </div>
                             <p className="text-gray-300 text-base md:text-xl py-5 leading-relaxed">
@@ -99,7 +99,7 @@ export default function Footer() {
                             <div className="pt-4">
                                 <a
                                     href="#contact"
-                                    className="inline-flex text-xl items-center bg-gradient-to-r w-full from-gray-800 to-gray-900 hover:from-blue-700 hover:to-blue-700 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
+                                    className="inline-flex text-xl items-center bg-gradient-to-r w-full from-gray-900 to-gray-900 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
                                 >
                                     Book Appointment
                                 </a>
@@ -108,7 +108,7 @@ export default function Footer() {
                     </div>
 
                     {/* Bottom Section */}
-                    <div className="mt-12 pt-8 border-t border-white/10">
+                    <div className="mt-12 pt-6 border-t border-white/10">
                         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
                             <div className="flex items-center space-x-1 text-gray-100 text-sm">
                                 <span>&copy; 2025 Navnetram. All rights reserved.</span>

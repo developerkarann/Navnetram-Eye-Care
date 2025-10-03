@@ -9,6 +9,8 @@ import Footer from './footer/Footer'
 import Navbar from './components/Navbar'
 import Service from './pages/service/Service'
 import Testimonials from './pages/testimonials/Testimonials'
+import WhyChooseUs from './pages/choose/WhyChooseUs'
+
 
 function App() {
 
@@ -20,6 +22,7 @@ function App() {
       <ServicePage />
       <Testimonials />
       {/* <AboutPage /> */}
+       <WhyChooseUs/>
       <ContactPage />
       <Footer />
     </>
