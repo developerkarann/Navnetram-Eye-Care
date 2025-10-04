@@ -10,6 +10,7 @@ import HomePage from './pages/home/HomePage'
 import Service from './pages/service/Service'
 import ServicePage from './pages/services/ServicePage'
 import Testimonials from './pages/testimonials/Testimonials'
+import MianPage from './MianPage'
 
 
 function App() {
@@ -17,17 +18,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar /> 
         <Routes>
+          <Route path='/' element={<MianPage />} />
           <Route path='/about' element={<AboutUs />} />
         </Routes>
-        <HomePage />
-        <Service />
-        <ServicePage />
-        <Testimonials />
-        <Carousel />
-        <WhyChooseUs />
-        <ContactPage />
         <Footer />
       </BrowserRouter>
     </>

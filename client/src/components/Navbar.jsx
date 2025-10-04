@@ -84,7 +84,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 <div
-                    className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out px-4 ${mobileMenuOpen ? "max-h-[350px] opacity-100 py-4" : "max-h-0 opacity-0"
+                    className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out px-4 ${mobileMenuOpen ? "h-[400px] max-h-[400px] opacity-100 py-4" : "max-h-0 opacity-0"
                         }`}
                 >
                     <div className="flex flex-col items-center pt-5 justify-center space-y-8">
