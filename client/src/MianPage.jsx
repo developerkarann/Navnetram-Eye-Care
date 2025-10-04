@@ -13,29 +13,18 @@ import WhyChooseUs from './pages/choose/WhyChooseUs'
 import Carousel from './components/Carousel'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AboutUs from './pages/about/AboutUs'
-import MianPage from './MianPage'
-
-
-function App() {
-
+const MianPage = () => {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/about' element={<AboutUs />} />
-        </Routes>
-        <HomePage />
-        <Service />
-        <ServicePage />
-        <Testimonials />
-        <Carousel />
-        <WhyChooseUs />
-        <ContactPage />
-        <Footer />
-      </BrowserRouter>
+      {/* <HomePage />
+      <Service />
+      <ServicePage />
+      <Testimonials />
+      <Carousel />
+      <WhyChooseUs />
+      <ContactPage /> */}
     </>
   )
 }
 
-export default App
+export default MianPage

@@ -67,7 +67,7 @@ const ServicePage = () => {
                         {services.map((service, index) => {
                             return (
                                 <>
-                                    <div key={index} class=" w-[430px] h-[400px]  mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                                    <div key={index} class=" w-[420px] h-[400px]  mb-5 hover:cursor-pointer hover:scale-105 duration-300">
                                         <img src={service.image} alt="Surgery" class="w-full h-[250px] rounded object-cover" />
                                         <div class="flex flex-col justify-center p-3">
                                             <h2 class="text-2xl font-semibold text-gray-800">{service.title}</h2>

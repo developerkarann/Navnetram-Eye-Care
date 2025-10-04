@@ -1,17 +1,22 @@
 import React, { useState } from 'react'
 import { Calendar, Menu, Stethoscope, X } from 'lucide-react';
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navLinks = [
+            {
+                title: 'Home',
+                link: '/'
+            },
         {
             title: 'Services',
-            link: 'services'
+            link: '#services'
         },
         {
             title: 'Testimonial',
-            link: 'testimonials'
+            link: '#testimonials'
         },
         {
             title: 'About Us',
@@ -19,7 +24,7 @@ const Navbar = () => {
         },
         {
             title: 'Contact Us',
-            link: 'contact'
+            link: '#contact'
         },
       
     ]
@@ -30,11 +35,13 @@ const Navbar = () => {
                 <div className="mx-auto px-10">
                     <div className="flex justify-between items-center py-2">
                         {/* Logo */}
+                        <Link to='/'>
                         <div className="flex items-center space-x-3">
                             <div className="transition-transform duration-300">
                                 <img src="/logo2.jpeg" className=' w-50 md:w-70' alt="" />
                             </div>
                         </div>
+                        </Link>
 
                         {/* Desktop Navigation */}
                         <div className='flex gap-5'>
@@ -42,7 +49,7 @@ const Navbar = () => {
                                 {navLinks.map((item, i) => (
                                     <a
                                         key={i}
-                                        href={`#${item.link}`}
+                                        href={`${item.link}`}
                                         className="text-gray-900 text-xl hover:text-blue-600 transition-colors duration-300 "
                                     >
                                         {item.title}
@@ -84,7 +91,7 @@ const Navbar = () => {
                         {navLinks.map((item, i) => (
                             <a
                                 key={i}
-                                href={`#${item.link}`}
+                                href={`${item.link}`}
                                 className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
