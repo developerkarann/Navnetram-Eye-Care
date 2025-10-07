@@ -8,25 +8,12 @@ const HomePage = () => {
             <div id="home"></div>
 
             {/* Hero Section */}
-            {/* <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 overflow-hidden"> */}
             <section className=" px-5 md:px-20 md:pb-10  bg-gradient-to-r from-blue-100 to-white overflow-hidden">
                 <div className=" z-10  py-30 md:py-0">
                     <div className="grid lg:grid-cols-2 gap-12 items-center ">
                         {/* Left Content */}
-                        <div className="text-white space-y-14  md:mt-[-30px]">
+                        <div className="text-white space-y-14  md:mt-[-30px] ">
                             {/* Main Heading */}
-                            {/* <div className="space-y-20 md:space-y-12">
-                                <h1 className="text-5xl text-gray-800 lg:text-6xl font-bold ">
-                                    Dr. Rinky Agarwal
-                                    <br />
-                                    <span className="text-blue-400  text-4xl lg:text-5xl">— Your Trusted</span>
-                                    <br />
-                                    <span className=" lg:text-5xl">Eye Care Specilist</span>
-                                </h1>
-                                <p className=" text-2xl text-gray-800 leading-relaxed max-w-lg">
-                                    Dr. Rinky Agarwal is founder & senior Consultant with 10 + Years Experience, Expert in <span>surgical & Medical Eye Treatments.</span>
-                                </p>
-                            </div> */}
                            
                             <div className=" md:space-y-10 md:mt-30 ">
                                 <div className=' flex flex-col gap-5'>

@@ -5,10 +5,10 @@ const Service = () => {
         <>
             <section className='service py-40 w-full px-3 md:px-10 bg-white' id='about'>
                 <div className="flex flex-col md:flex-row gap-10 items-center">
-                    <div className="colum left md:w-[50%]">
+                    <div className="colum left md:w-[50%] loadAnimate">
                         <img src="/assest/images/cataract.jpg" className='  ' alt="Dr. Rinky Agarwal" />
                     </div>
-                    <div className=" colum right md:w-[50%]">
+                    <div className=" colum right md:w-[50%] loadAnimate ">
                         <div className="content flex flex-col gap-10">
                             <h1 className="title text-3xl font-bold text-gray-800 md:text-5xl"> Leading <span className='text-blue-900'> Advanced Eye Care </span>  in heart of Noida </h1>
                             <p className="subtitle text-gray-800 text-lg md:text-2xl leading-relaxed">

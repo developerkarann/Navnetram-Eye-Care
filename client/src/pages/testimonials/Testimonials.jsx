@@ -26,7 +26,7 @@ const Testimonials = () => {
 
     return (
         <div className="w-full px-6 bg-white py-10 pb-30" id="testimonials">
-            <div className="mb-20 gap-10">
+            <div className="mb-20 gap-10 loadAnimate">
                 <h1 className=" text-4xl md:text-5xl font-bold text-center mb-2 text-gray-800">Testimonials </h1>
                 <div className=" w-30 md:w-50 h-0.5 bg-blue-400 mx-auto mt-4 mb-5"></div>
                 <h2 className=" text-2xl md:text-4xl font-semibold text-center mb-2 text-gray-800">Our Results Speak Louder Than Words </h2>
@@ -36,7 +36,7 @@ const Testimonials = () => {
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
                     {
                         reviews?.map((item, i) => (
-                            <div className="bg-white shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full transition-all duration-500">
+                            <div className="bg-white loadAnimate shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full transition-all duration-500">
                                 <div className="flex flex-col items-center">
                                     <img
                                         src={item.dp}

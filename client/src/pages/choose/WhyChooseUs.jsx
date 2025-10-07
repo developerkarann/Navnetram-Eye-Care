@@ -111,14 +111,14 @@ const WhyChooseUs = () => {
   return (
     <div className="w-full pb-30 bg-blue-50  py-16  px-4">
       <div className=" mx-auto">
-        <div className="text-center mb-15 pb-5" >
+        <div className="text-center mb-15 pb-5 loadAnimate" >
           <h2 className=" text-4xl md:text-5xl text-gray-800 font-bold mb-4">Why Choose Us ?</h2>
           <div className="w-30 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
         </div>
 
         <div
           ref={scrollRef}
-          className="overflow-x-hidden"
+          className="overflow-x-hidden loadAnimate"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >

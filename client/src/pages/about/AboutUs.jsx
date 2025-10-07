@@ -48,9 +48,9 @@ export default function AboutUs() {
 
     <div className=" mx-auto  lg:px-0 pb-16 w-full">
       {/* Dr Rinky Agarwal Section */}
-      <div className="mb-20 w-full">
+      <div className="mb-20 w-full ">
         <div className="  lg:px-0 w-full  overflow-hidden">
-          <section className="pb-8 relative px-2 md:px-10 w-full bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 " id='services'>
+          <section className="pb-8 relative loadAnimate px-2 md:px-10 w-full bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 " id='services'>
             <div className="relative z-10 py-8 px-2">
               <div className="text-center mb-10" >
                 <h2 className=" text-4xl md:text-5xl text-white font-bold mb-4">About Our Doctors</h2>
@@ -60,7 +60,7 @@ export default function AboutUs() {
                 {doctors.map((doctor, index) => {
                   return (
                     <>
-                      <div key={index} class=" sm:w-[500px]  rounded-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                      <div key={index} class="  sm:w-[500px]  rounded-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
                         <img src={doctor.image} alt="Surgery" class="w-full h-[450px] rounded-2xl object-cover" />
                         <div class="flex flex-col justify-center p-3 text-center ">
                           <h2 className="text-4xl font-bold text-gray-900 mb-2">{doctor.name}</h2>
@@ -84,7 +84,7 @@ export default function AboutUs() {
 
 
           {/* Achievements Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-8 bg-blue-50">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-8 bg-blue-50 loadAnimate">
             {drRinkyAchievements.map((achievement, index) => (
               <div
                 key={index}
@@ -100,7 +100,7 @@ export default function AboutUs() {
           </div>
 
           {/* About Content */}
-          <div className="p-8 px-0 md:px-20 bg-white">
+          <div className="p-8 px-0 md:px-20 bg-white loadAnimate ">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
                 <Stethoscope className="w-6 h-6" />

@@ -52,11 +52,11 @@ export default function Carousel() {
 
     return (
         <section className='md:min-h-screen bg-gradient-to-br pb-40 md:pb-40 from-blue-900 via-blue-800 to-blue-950 pt-15'>
-            <div className="text-center mb-15" >
+            <div className="text-center mb-15 loadAnimate" >
                 <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">Our Equipments</h2>
                 <div className="w-30 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
             </div>
-            <div className=" flex items-center justify-center" >
+            <div className=" flex items-center justify-center loadAnimate" >
                 <div className="w-full md:px-10">
                     {/* Carousel Container with Navigation */}
                     <div className="relative flex items-center md:gap-6">
