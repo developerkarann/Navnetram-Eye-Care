@@ -33,13 +33,13 @@ const HomePage = () => {
                                     <h1 className="text-5xl text-gray-800 lg:text-6xl font-bold ">
                                         Dr. Rinky Agarwal
                                     </h1>
-                                    <h3 className=" text-blue-600 text-3xl md:text-4xl font-semibold  ">Expert Eye Care with Trust of AIIMS <br className='hidden md:block' /> <span>  (New Delhi) </span>  </h3>
-                                    <p className=" text-xl md:text-2xl text-gray-900  pt-8 md:pt-5 leading-relaxed ">
+                                    <h3 className=" text-blue-900 text-3xl md:text-4xl font-semibold  ">Expert Eye Care with Trust of AIIMS <br className='hidden md:block' /> <span>  (New Delhi) </span>  </h3>
+                                    <p className=" text-xl text-gray-900  pt-8 md:pt-5 leading-relaxed ">
                                         Navnetram Advanced Eye care is a medical facility co-structured by Dr Rinky Agarwal and Dr Nitin
                                         Gupta with goal of providing high quality, advanced and economical eye care.
-                                        {/* The center provides
+                                        The center provides
                                         excellent eye care facilities by expert ophthalmologist(s) trained from premier institutes of India like
-                                        AIIMS, LHMC and GNEC/MAMC. */}
+                                        AIIMS, LHMC and GNEC/MAMC.
                                     </p>
                                 </div>
                             </div>

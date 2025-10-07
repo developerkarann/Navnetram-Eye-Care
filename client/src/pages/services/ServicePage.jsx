@@ -5,47 +5,47 @@ const ServicePage = () => {
             title: " Cataract & Lens Surgery",
             description: "Achieve clear vision with painless microincision cataract surgery (MICS) and premium IOL implants, customized for your unique needs.",
             duration: "45 mins",
-            image: 'https://images.unsplash.com/photo-1742627541273-33ebe14bf1f3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            image: '/assest/services/cataract.jpg'
         },
         {
             title: "LASIK & Laser Vision correction",
             description: "Personalized LVC counselling with bladeless, painless options including LASIK, SMILE, PRK, ICL—advanced technology for safe, lasting vision",
-            image: "https://images.unsplash.com/photo-1722419136179-991a684eee53?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/lasik.jpg"
         },
         {
             title: "Cornea & Transplant Facilities",
             description: "Expert cornea specialists offering treatment for keratoconus, keratitis, corneal injuries, and advanced transplants like PKP, DALK, DMEK.",
-            image: "https://plus.unsplash.com/premium_photo-1661607415636-119f7bfa0542?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/cornea.jpg"
         },
         {
             title: "Glaucoma Management",
             description: "Glaucoma specialists providing precise diagnosis and complete management, from advanced imaging to MIGS and major filtration surgeries.",
-            image: "https://plus.unsplash.com/premium_photo-1683121054290-15cc28908ddb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/galucoma.jpg"
         },
         {
             title: "Misaligned eyes/Squint",
             description: "Expert squint management using precise, step-by-step, patient-centered care for optimal correction and lasting, satisfactory results.",
-            image: "https://plus.unsplash.com/premium_photo-1677333508737-6b6d642bc6d6?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/squint.jpg"
         },
         {
             title: "Eye lid problems",
             description: "Evidence-based eye care for socially disfiguring conditions like white eyes, shrinking eyes, droopy lids, and involuntary movements.",
-            image: "https://images.unsplash.com/photo-1579684453401-966b11832744?q=80&w=891&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/eyelid.jpg"
         },
         {
             title: "Retina and Uvea Disorders",
             description: " Skilled ophthalmologists treating retinal and uveitic diseases—macular edema, diabetic retinopathy, ARMD, CRVO, CRAO, and more. ",
-            image: "https://images.unsplash.com/photo-1718766907383-d85f07a0847b?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/retinaAndUvea.jpg"
         },
         {
             title: "Pediatric eye care",
             description: "Comprehensive pediatric eye care using advanced automated and manual methods to ensure precise, child-focused treatment.",
-            image: "https://plus.unsplash.com/premium_photo-1661281327960-f3de8390effc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/pediatricEyeCare.jpg"
         },
         {
             title: "Comprehensive eye care",
             description: "Expert care for common eye problems—red eyes, dry eyes, lazy eyes, myopia, chalazion, pterygium, and computer vision syndrome.",
-            image: "https://images.unsplash.com/photo-1671810456796-48fd984dd413?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/assest/services/comprehensiveEyeCare.jpg"
         },
 
 
@@ -67,7 +67,7 @@ const ServicePage = () => {
                         {services.map((service, index) => {
                             return (
                                 <>
-                                    <div key={index} class=" w-[420px] h-[400px]  mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                                    <div key={index} class=" w-[400px] h-[400px]  mb-5 hover:cursor-pointer hover:scale-105 duration-300">
                                         <img src={service.image} alt="Surgery" class="w-full h-[250px] rounded object-cover" />
                                         <div class="flex flex-col justify-center p-3">
                                             <h2 class="text-2xl font-semibold text-gray-800">{service.title}</h2>

@@ -22,6 +22,9 @@ function App() {
         <Routes>
           <Route path='/' element={<MianPage />} />
           <Route path='/about' element={<AboutUs />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/testimonials' element={<Testimonials />} />
+          <Route path='/services' element={<ServicePage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -36,12 +36,12 @@ export default function Footer() {
                 <div className=" mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* About Section */}
-                        <div className="space-y-4">
+                        <div className="">
                             <div>
                                 <img src="/logo.png" className='w-80' alt="" />
                                 {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
                             </div>
-                            <p className="text-gray-300 text-base md:text-xl py-5 leading-relaxed">
+                            <p className="text-gray-300 text-base py-5 leading-relaxed">
                                 Your eyes deserve the best care. At Navnetram Advanced Eye Care, we combine advanced technology with personalized treatment to protect your vision and support lifelong eye health
                             </p>
                             <div className="flex space-x-6 mb-5 md:mb-0">
@@ -110,8 +110,11 @@ export default function Footer() {
                     {/* Bottom Section */}
                     <div className="mt-12 pt-6 border-t border-white/10">
                         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
-                            <div className="flex items-center space-x-1 text-gray-100 text-sm">
-                                <span>&copy; 2025 Navnetram. All rights reserved.</span>
+                            <div className="flex w-full flex-col text-center md:justify-between space-x-1 text-gray-100 text-sm">
+                                <span>&copy; 2025 Navnetram.com All rights reserved.</span>
+                                {/* <p class="text-sm mt-2 sm:mt-0">
+                                    Designed & Developed by <span class="font-semibold text-blue-600"> <a href="https://www.karanpal.in" target='_blank'> Karan Pal </a></span>
+                                </p> */}
                                 {/* <FaHeart className="text-blue-400 animate-pulse" size={14} /> */}
                             </div>
                         </div>

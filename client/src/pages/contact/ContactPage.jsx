@@ -40,7 +40,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <section className=" overflow-hidden rounded-xl mb-25 m-auto" id='contact'>
+            <section className=" overflow-hidden rounded-xl mb-25 m-auto pt-20" id='contact'>
                 <div className="relative z-10  backdrop-blur-sm py-8 px-10 md:px-4">
                     <div className="text-center mb-8 hidden md:visible">
                         <h2 className="text-4xl  font-bold text-gray-800 mb-4">Book Your Appointment</h2>

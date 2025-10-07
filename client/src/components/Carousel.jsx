@@ -7,25 +7,29 @@ export default function Carousel() {
 
     const images = [
         {
-            url: '/assest/images/05.jpeg',
-            title: 'Mountain Landscape'
+            url: '/assest/equipments/1st.png',
         },
         {
-            url: '/assest/images/home-pic.jpeg',
-            title: 'Forest Path'
+            url: '/assest/equipments/2nd.png',
         },
         {
-            url: '/assest/images/02.jpeg',
-            title: 'Ocean View'
+            url: '/assest/equipments/3rd.png',
         },
         {
-        url: '/assest/images/04.jpeg',
-            title: 'Desert Sunset'
+            url: '/assest/equipments/4th.png',
         },
         {
-            url: '/assest/images/03.jpeg',
-            title: 'Green Valley'
-        }
+            url: '/assest/equipments/5th.jpg',
+        },
+        {
+            url: '/assest/equipments/6th.png',
+        },
+        {
+            url: '/assest/equipments/7th.png',
+        },
+        {
+            url: '/assest/equipments/8th.png',
+        },
     ];
 
     const prevSlide = () => {
@@ -47,9 +51,9 @@ export default function Carousel() {
     const getNextIndex = () => (currentIndex === images.length - 1 ? 0 : currentIndex + 1);
 
     return (
-        <section className='md:min-h-screen h-190 bg-gradient-to-br md:pb-30 from-blue-900 via-blue-800 to-blue-950 pt-15'>
+        <section className='md:min-h-screen bg-gradient-to-br pb-40 md:pb-40 from-blue-900 via-blue-800 to-blue-950 pt-15'>
             <div className="text-center mb-15" >
-                <h2 className=" text-4xl md:text-5xl text-white font-semibold mb-4">Our Equipments</h2>
+                <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">Our Equipments</h2>
                 <div className="w-30 h-0.5 bg-blue-500 mx-auto mt-4 mb-5"></div>
             </div>
             <div className=" flex items-center justify-center" >
@@ -81,7 +85,7 @@ export default function Carousel() {
                             {/* Center Main Image */}
                             <div className="w-full md:w-1/2 relative">
                                 <div className="bg-blue-950 rounded-2xl shadow-2xl overflow-hidden">
-                                    <div className="relative h-100 md:h-120 overflow-hidden">
+                                    <div className="relative h-100 md:h-160 0 overflow-hidden">
                                         {images.map((image, index) => {
                                             const isActive = index === currentIndex;
                                             const isPrev = index === getPrevIndex();
@@ -116,7 +120,7 @@ export default function Carousel() {
                                                         className="w-full h-full object-cover"
                                                         loading="eager"
                                                     />
-                                                   
+
                                                 </div>
                                             );
                                         })}
