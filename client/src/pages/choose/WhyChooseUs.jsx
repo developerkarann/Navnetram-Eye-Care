@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Award, Shield, DollarSign, FileCheck, Heart, Zap, Building2, FlaskConical } from 'lucide-react';
+import { Award, Shield, DollarSign, FileCheck, Heart, Zap, Building2, FlaskConical , IndianRupee} from 'lucide-react';
 
 const WhyChooseUs = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
       iconColor: 'text-blue-600'
     },
     {
-      icon: DollarSign,
+      icon: IndianRupee,
       title: 'Economical',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'

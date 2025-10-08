@@ -38,8 +38,8 @@ export default function AboutUs() {
     },
     {
       name: "Dr. Nitin Gupta",
-      title: "",
-      tags: ["Excellence", "fineness", "quality", "outstanding", "exceptional", "superior", "distinct", "brilliance"],
+      title: "Medicine Physician",
+      tags: [" MBBS", "DNB", "FEBNM", "MANMS", "RSO-2"],
       image: 'https://images.unsplash.com/photo-1722419136179-991a684eee53?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
   ];
@@ -60,8 +60,8 @@ export default function AboutUs() {
                 {doctors.map((doctor, index) => {
                   return (
                     <>
-                      <div key={index} class="  sm:w-[500px]  rounded-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
-                        <img src={doctor.image} alt="Surgery" class="w-full h-[450px] rounded-2xl object-cover" />
+                      <div key={index} class="  sm:w-[500px] min-h-140 md:max-h-140 rounded-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                        <img src={doctor.image} alt="Surgery" class="w-full h-[370px] rounded-2xl object-cover" />
                         <div class="flex flex-col justify-center p-3 text-center ">
                           <h2 className="text-4xl font-bold text-gray-900 mb-2">{doctor.name}</h2>
                           <p className="text-2xl text-blue-900 font-semibold mb-3">{doctor.title}</p>
@@ -99,26 +99,25 @@ export default function AboutUs() {
             ))}
           </div>
 
-          {/* About Content */}
-          <div className="p-8 px-0 md:px-20 bg-white loadAnimate ">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
-                <Stethoscope className="w-6 h-6" />
-                About Dr Rinky Agarwal
-              </h3>
-              <div className="text-gray-800 leading-relaxed text-xl space-y-4">
-                <p>
-                  Dr Rinky Agarwal is a leading super-specialised ophthalmologist in Delhi-NCR with vast surgical aptitude gathered from premier institutes of India. With a strong academic background from AIIMS (New Delhi) and a commitment towards patient care, research and teaching, Dr Rinky focuses on holistic and comprehensive eye care for all age groups, with a special interest in managing complex cases pertaining to ophthalmic specialities such as cornea, ocular surface, strabismus, and oculoplasty.
-                </p>
-                <p>
-                  She has single-handedly performed 10000+ cataract surgeries with premium IOL implants, 500+ corneal transplants and 2000+ LASIK procedures with 99.99% success rates. She is on the forefront of glaucoma diagnosis using cutting-edge technology like OCT optic nerve scans, visual field testing and pachymetry, besides performing major and minor GFS.
-                </p>
-                <p>
-                  She served a successful tenure as a clinician, academician, and mentor at premier institutes such as AIIMS (New Delhi), LHMC and MAMC/GNEC. Besides, she is a gold medalist in MBBS from Osmania Medical College, the apex govt medical college in Andhra Pradesh.
-                </p>
-                <p>
-                  She has numerous academic accolades with 100+ publications in multiple peer-reviewed national and international journals and conferences. Her professional aspiration is to deliver individually-tailored, evidence-based and ethical eye care in a compassionate manner, simultaneously excelling in academics and research.
-                </p>
+          {/* About Dr. Rinky Content */}
+          <div className="p-8 px-5 md:px-20 bg-white loadAnimate ">
+            <div className=''>
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+                  <Stethoscope className="w-6 h-6" />
+                  Dr. Rinky Agarwal
+                </h3>
+                <div className="text-gray-800 leading-relaxed text-xl space-y-4">
+                  <p>
+                    Dr. Rinky Agarwal is a leading super-specialised ophthalmologist in Delhi-NCR with vast surgical aptitude gathered form premier institutes of India. With a strong academic background from AIIMS (New Delhi) and a commitment towards patient care, research and teaching, Dr Rinky focuses on holistic and comprehensive eye care for all age groups, with a special interest in managing complex cases pertaining to ophthalmic specialities such as cornea, ocular surface, strabismus, and oculoplasty. She has single-handedly performed 10000+ cataract surgeries with premium IOL implants, 500+ corneal transplants and 2000+ LASIK procedures with 99.99% success rates. She is on the forefront of glaucoma diagnosis using cutting-edge technology like OCT optic nerve scans, visual field testing and pachymetry, besides performing major and minor GF
+                  </p>
+                  <p>
+                    She served a successful tenure as a clinician, academician, and mentor at premier institutes such as AIIMS (NEW DELHI), LHMC and MAMC/GNEC. Besides, she is a gold medalist in MBBS from Osmania Medical College, the apex govt medical college in Andhra Pradesh. She has numerous academic accolades with 100+ publications in multiple peer-reviewed national and international journals and conferences. Her professional aspiration is to deliver individually-tailored, evidence-based and ethical eye care in a compassionate matter, simultaneously excelling in academics and research.
+                  </p>
+                  <p>
+                    She is currently working with Navnetram Advanced Eye Care and is also available on appointment at Visitech Eye Centre, New Delhi; AB Laser Eye centre, Greater Noida; Drishti Eye and ENT centre, Ghaziabad; and Kumar eye centre, Dadri.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -160,6 +159,23 @@ export default function AboutUs() {
                 ))}
               </div>
             </div>
+
+
+            <div className="mt-20">
+              <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+                <Stethoscope className="w-6 h-6" />
+                Dr. Nitin Gupta
+              </h3>
+              <div className="text-gray-800 leading-relaxed text-xl space-y-4">
+
+                <p>
+                  Dr. Nitin Gupta (MBBS, DNB, FEBNM, MANMS, RSO-2) is a renowned Nuclear Medicine Physician based in New Delhi and a proud alumnus of prestigious Maulana Azad Medical College (MAMC). He is also acknowledged for his outstanding clinical excellence and distinct empathetic approach. His academic brilliance is applauded world-wide with 50+ publications in multiple national and international peer-reviewed journals. Dr Nitin has been associated with Navnetram Advanced Eye Care since its inception, incessantly determined towards making quality eye care accessible and affordable to all.
+                </p>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>

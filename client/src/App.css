@@ -21,3 +21,38 @@ body {
   animation-timeline: view();
   animation-range: entry 0;
 }
+
+
+@keyframes appearX {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* move from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* end in place */
+  }
+}
+
+.animateL {
+  animation: appearX linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+@keyframes appearR {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* move from Right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* end in place */
+  }
+}
+
+.animateR {
+  animation: appearR linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}

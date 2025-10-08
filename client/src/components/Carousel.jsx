@@ -70,7 +70,7 @@ export default function Carousel() {
                         </button>
 
                         {/* Images Container */}
-                        <div className="flex-1 relative flex items-center justify-center md:gap-4">
+                        <div className="flex-1 relative flex items-center justify-center md:gap-8">
                             {/* Left Preview Image */}
                             <div className="hidden md:block w-1/4 h-64 overflow-hidden rounded-xl opacity-50 transition-all duration-[800ms] ease-out hover:opacity-70">
                                 <img
@@ -83,9 +83,9 @@ export default function Carousel() {
                             </div>
 
                             {/* Center Main Image */}
-                            <div className="w-full md:w-1/2 relative">
+                            <div className="w-full md:w-1/3 relative">
                                 <div className="bg-blue-950 rounded-2xl shadow-2xl overflow-hidden">
-                                    <div className="relative h-100 md:h-160 0 overflow-hidden">
+                                    <div className="relative h-100 md:h-125 0 overflow-hidden">
                                         {images.map((image, index) => {
                                             const isActive = index === currentIndex;
                                             const isPrev = index === getPrevIndex();

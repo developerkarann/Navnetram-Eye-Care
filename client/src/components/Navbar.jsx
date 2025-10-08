@@ -1,33 +1,35 @@
 import React, { useState } from 'react'
 import { Calendar, Menu, Stethoscope, X } from 'lucide-react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navLinks = [
-            {
-                title: 'Home',
-                link: '/'
-            },
+        {
+            title: 'Home',
+            link: '/'
+        },
         {
             title: 'Services',
-            link: '#services'
+            link: '/services'
         },
         {
             title: 'Testimonial',
-            link: '#testimonials'
+            link: '/testimonials'
         },
         {
             title: 'About Us',
-            link: 'about'
+            link: '/about'
         },
         {
             title: 'Contact Us',
-            link: '#contact'
+            link: '/contact'
         },
-      
+
     ]
+
+    console.log(window.location.pathname)
     return (
         <>
             {/* <nav className="bg-white shadow-lg sticky top-0 z-50 transition-shadow duration-300"> */}
@@ -36,35 +38,42 @@ const Navbar = () => {
                     <div className="flex justify-between items-center py-2">
                         {/* Logo */}
                         <Link to='/'>
-                        <div className="flex items-center space-x-3">
-                            <div className="transition-transform duration-300">
-                                <img src="/logo2.jpeg" className=' w-50 md:w-70' alt="" />
+                            <div className="flex items-center space-x-3">
+                                <div className="transition-transform duration-300">
+                                    <img src="/logo2.jpeg" className=' w-50 md:w-70' alt="" />
+                                </div>
                             </div>
-                        </div>
                         </Link>
 
                         {/* Desktop Navigation */}
                         <div className='flex gap-5'>
                             <div className="hidden md:flex items-center space-x-8">
                                 {navLinks.map((item, i) => (
-                                    <a
+                                    <Link
                                         key={i}
-                                        href={`${item.link}`}
+                                        to={`${item.link}`}
                                         className="text-gray-900 text-xl hover:text-blue-600 transition-colors duration-300 "
                                     >
                                         {item.title}
-                                    </a>
+                                    </Link>
+                                    // <a
+                                    //     key={i}
+                                    //     href={`  ${window.location.pathname === '/about' ? '/' : item.link}`}
+                                    //     className="text-gray-900 text-xl hover:text-blue-600 transition-colors duration-300 "
+                                    // >
+                                    //     {item.title}
+                                    // </a>
                                 ))}
                             </div>
 
                             {/* Book Appointment - Desktop */}
                             <div className="hidden md:flex">
-                                <a
-                                    href="#contact"
+                                <Link
+                                    to="/contact"
                                     className="bg-gradient-to-r from-blue-800 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold  transition-all duration-300"
                                 >
                                     BOOK APPOINTMENT
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -89,23 +98,31 @@ const Navbar = () => {
                 >
                     <div className="flex flex-col items-center pt-5 justify-center space-y-8">
                         {navLinks.map((item, i) => (
-                            <a
+                            <Link
                                 key={i}
-                                href={`${item.link}`}
+                                to={` ${item.link}`}
                                 className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 {item.title.toUpperCase()}
-                            </a>
+                            </Link>
+                            // <a
+                            //     key={i}
+                            //     href={` ${window.location.pathname === '/about' ? '/' : item.link}`}
+                            //     className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
+                            //     onClick={() => setMobileMenuOpen(false)}
+                            // >
+                            //     {item.title.toUpperCase()}
+                            // </a>
                         ))}
 
-                        <a
-                            href="#contact"
+                        <Link
+                            href="/contact"
                             className="bg-gradient-to-r w-full from-blue-800 to-blue-600 text-white px-4 py-2 rounded-lg text-center font-semibold hover:from-blue-600 hover:to-blue-700  duration-500"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             BOOK APPOINTMENT
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </nav>
