@@ -100,14 +100,14 @@ export default function AboutUs() {
           </div>
 
           {/* About Dr. Rinky Content */}
-          <div className="p-8 px-5 md:px-20 bg-white loadAnimate ">
+          <div className="p-5 px-5 md:px-20 bg-white loadAnimate ">
             <div className=''>
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
                   <Stethoscope className="w-6 h-6" />
                   Dr. Rinky Agarwal
                 </h3>
-                <div className="text-gray-800 leading-relaxed text-xl space-y-4">
+                <div className="text-gray-800 leading-relaxed text-sm md:text-xl space-y-4">
                   <p>
                     Dr. Rinky Agarwal is a leading super-specialised ophthalmologist in Delhi-NCR with vast surgical aptitude gathered form premier institutes of India. With a strong academic background from AIIMS (New Delhi) and a commitment towards patient care, research and teaching, Dr Rinky focuses on holistic and comprehensive eye care for all age groups, with a special interest in managing complex cases pertaining to ophthalmic specialities such as cornea, ocular surface, strabismus, and oculoplasty. She has single-handedly performed 10000+ cataract surgeries with premium IOL implants, 500+ corneal transplants and 2000+ LASIK procedures with 99.99% success rates. She is on the forefront of glaucoma diagnosis using cutting-edge technology like OCT optic nerve scans, visual field testing and pachymetry, besides performing major and minor GF
                   </p>

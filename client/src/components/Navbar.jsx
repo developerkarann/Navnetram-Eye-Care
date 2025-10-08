@@ -29,7 +29,6 @@ const Navbar = () => {
 
     ]
 
-    console.log(window.location.pathname)
     return (
         <>
             {/* <nav className="bg-white shadow-lg sticky top-0 z-50 transition-shadow duration-300"> */}
@@ -56,13 +55,6 @@ const Navbar = () => {
                                     >
                                         {item.title}
                                     </Link>
-                                    // <a
-                                    //     key={i}
-                                    //     href={`  ${window.location.pathname === '/about' ? '/' : item.link}`}
-                                    //     className="text-gray-900 text-xl hover:text-blue-600 transition-colors duration-300 "
-                                    // >
-                                    //     {item.title}
-                                    // </a>
                                 ))}
                             </div>
 
@@ -100,20 +92,13 @@ const Navbar = () => {
                         {navLinks.map((item, i) => (
                             <Link
                                 key={i}
-                                to={` ${item.link}`}
+                                to={`${item.link}`}
                                 className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 {item.title.toUpperCase()}
                             </Link>
-                            // <a
-                            //     key={i}
-                            //     href={` ${window.location.pathname === '/about' ? '/' : item.link}`}
-                            //     className="text-gray-700 text-xl hover:text-blue-600 transition-colors duration-300 font-medium"
-                            //     onClick={() => setMobileMenuOpen(false)}
-                            // >
-                            //     {item.title.toUpperCase()}
-                            // </a>
+
                         ))}
 
                         <Link
