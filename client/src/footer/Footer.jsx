@@ -28,7 +28,8 @@ export default function Footer() {
     ];
 
     return (
-        <div className="bg-black px-8">
+        <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 px-8">
+         {/* <div className="bg-black px-8"> */}
 
 
             {/* Footer */}
@@ -38,7 +39,7 @@ export default function Footer() {
                         {/* About Section */}
                         <div className="">
                             <div>
-                                <img src="/logo.png" className='w-80' alt="" />
+                                <img src="/logo.png" className='w-90' alt="" />
                                 {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
                             </div>
                             <p className="text-gray-300 text-base py-5 leading-relaxed">
@@ -99,7 +100,7 @@ export default function Footer() {
                             <div className="pt-4">
                                 <a
                                     href="#contact"
-                                    className="inline-flex text-xl items-center bg-gradient-to-r w-full from-gray-900 to-gray-900 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
+                                    className="inline-flex text-xl items-center bg-gradient-to-r w-full from-gray-800 to-gray-900 px-4 py-4 rounded-xl text-white  transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 overflow-hidden"
                                 >
                                     Book Appointment
                                 </a>
@@ -110,12 +111,11 @@ export default function Footer() {
                     {/* Bottom Section */}
                     <div className="mt-12 pt-6 border-t border-white/10">
                         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
-                            <div className="flex w-full flex-col text-center md:justify-between space-x-1 text-gray-100 text-sm">
+                            <div className="flex w-full flex-col md:flex-row text-center md:justify-between space-x-1 text-gray-100 text-sm">
                                 <span>&copy; 2025 Navnetram.com All rights reserved.</span>
-                                {/* <p class="text-sm mt-2 sm:mt-0">
+                                <p class="text-sm mt-2 sm:mt-0">
                                     Designed & Developed by <span class="font-semibold text-blue-600"> <a href="https://www.karanpal.in" target='_blank'> Karan Pal </a></span>
-                                </p> */}
-                                {/* <FaHeart className="text-blue-400 animate-pulse" size={14} /> */}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -126,23 +126,3 @@ export default function Footer() {
         </div>
     );
 }
-
-
-// import React from 'react'
-
-// const Footer = () => {
-//     return (
-//         <>
-//             <footer class="bg-white border-t border-blue-100 text-blue-800 mt-10">
-//                 <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
-//                     <p class="text-sm">&copy; 2025 Navnetram. All rights reserved.</p>
-//                     <p class="text-sm mt-2 sm:mt-0">
-//                         Developed & Managed by <span class="font-semibold text-blue-600"> <a href="https://www.karanpal.in" target='_blank'> Karan Pal </a></span>
-//                     </p>
-//                 </div>
-//             </footer>
-//         </>
-//     )
-// }
-
-// export default Footer

@@ -1,5 +1,4 @@
-import { Award, GraduationCap, Eye, Users, BookOpen, MapPin, Stethoscope, Star } from 'lucide-react';
-import AboutPage from './AboutPage';
+import { Award, Eye, MapPin, Star, Stethoscope, Users } from 'lucide-react';
 
 export default function AboutUs() {
   const drRinkyAchievements = [
@@ -31,17 +30,17 @@ export default function AboutUs() {
 
   const doctors = [
     {
-      name: "Dr. Rinky Agarwal",
-      title: "Super-Specialised Ophthalmologist",
-      image: '/assest/portrait.jpeg',
-      tags: ['MBBS Gold Medalist', 'AIIMS New Delhi', 'LHMC and MAMC/GNEC', 'MBBS', '100+ Publications']
-    },
-    {
-      name: "Dr. Nitin Gupta",
-      title: "Medicine Physician",
-      tags: [" MBBS", "DNB", "FEBNM", "MANMS", "RSO-2"],
-      image: 'https://images.unsplash.com/photo-1722419136179-991a684eee53?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
+            name: "Dr. Rinky Agarwal",
+            title: "Super-Specialised Ophthalmologist",
+            image: '/assest/images/drRinkyWithLogo.jpg',
+            tags: ['MBBS Gold Medalist', 'AIIMS New Delhi', 'LHMC and MAMC/GNEC', 'MBBS', '100+ Publications']
+        },
+        {
+            name: "Dr. Nitin Gupta",
+            title: "Medicine Physician",
+            tags: [" MBBS", "DNB", "FEBNM", "MANMS", "RSO-2"],
+            image: '/assest/images/dr-nitin-gupta.jpg'
+        },
   ];
 
   return (
@@ -88,9 +87,9 @@ export default function AboutUs() {
             {drRinkyAchievements.map((achievement, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl  p-2 md:p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="bg-white rounded-xl loadAnimate p-2 md:p-6 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="bg-blue-600 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3">
+                <div className="bg-blue-600 loadAnimate w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-3">
                   <achievement.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-blue-900 mb-1">{achievement.number}</h3>

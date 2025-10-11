@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Award, Shield, DollarSign, FileCheck, Heart, Zap, Building2, FlaskConical , IndianRupee} from 'lucide-react';
+import { Award, Shield, DollarSign, FileCheck, Heart, Zap, Building2, FlaskConical, IndianRupee } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -8,14 +8,14 @@ const WhyChooseUs = () => {
 
   const features = [
     {
-      icon: Award,
-      title: 'Expert',
+      icon: Shield,
+      title: 'Ethical',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'
     },
     {
-      icon: Shield,
-      title: 'Ethical',
+      icon: Zap,
+      title: 'Ultramodern',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'
     },
@@ -26,21 +26,21 @@ const WhyChooseUs = () => {
       iconColor: 'text-blue-600'
     },
     {
-      icon: FileCheck,
-      title: 'Evidence-based',
-      subtitle: 'international level protocols',
+      icon: Award,
+      title: 'Expert',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'
     },
+    {
+      icon: FlaskConical,
+      title: 'Research-oriented',
+      color: 'bg-blue-100',
+      iconColor: 'text-blue-600'
+    },
+
     {
       icon: Heart,
       title: 'Patient-first',
-      color: 'bg-blue-100',
-      iconColor: 'text-blue-600'
-    },
-    {
-      icon: Zap,
-      title: 'Ultramodern',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'
     },
@@ -52,11 +52,13 @@ const WhyChooseUs = () => {
       iconColor: 'text-blue-600'
     },
     {
-      icon: FlaskConical,
-      title: 'Research-oriented',
+      icon: FileCheck,
+      title: 'Evidence-based',
+      subtitle: 'international level protocols',
       color: 'bg-blue-100',
       iconColor: 'text-blue-600'
-    }
+    },
+
   ];
 
   useEffect(() => {
@@ -109,7 +111,7 @@ const WhyChooseUs = () => {
   }, [scrollPosition]);
 
   return (
-    <div className="w-full pb-30 bg-blue-50  py-16  px-4">
+    <div className="w-full pb-30 bg-blue-50  py-16 ">
       <div className=" mx-auto">
         <div className="text-center mb-15 pb-5 loadAnimate" >
           <h2 className=" text-4xl md:text-5xl text-gray-800 font-bold mb-4">Why Choose Us ?</h2>

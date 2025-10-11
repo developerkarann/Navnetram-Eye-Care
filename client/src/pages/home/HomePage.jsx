@@ -8,13 +8,19 @@ const HomePage = () => {
             <div id="home"></div>
 
             {/* Hero Section */}
-            <section className=" px-5 md:px-20 md:pb-10  bg-gradient-to-r from-blue-100 to-white overflow-hidden">
-                <div className=" z-10  py-30 md:py-0">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center ">
+            <section className="  md:px-20 md:pb-10  bg-gradient-to-r from-blue-100 to-white overflow-hidden">
+                <div className=" z-10   md:py-0">
+
+                    <div className="mainLogo mt-10 mb-8 md:hidden">
+                        <img src="/logo2.jpeg" className=' w-full md:hidden shadow' alt="" />
+                    </div>
+
+                    <div className="grid lg:grid-cols-2 gap-12 items-center px-5">
                         {/* Left Content */}
                         <div className="text-white space-y-14  md:mt-[-30px] ">
                             {/* Main Heading */}
-                           
+
+
                             <div className=" md:space-y-10 md:mt-30 ">
                                 <div className=' flex flex-col gap-5'>
                                     <h1 className="text-5xl text-gray-800 lg:text-6xl font-bold ">
@@ -43,15 +49,15 @@ const HomePage = () => {
                             {/* Stats */}
                             <div className="grid grid-cols-3 gap-8">
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-500">10+</div>
+                                    <div className="text-3xl font-bold text-blue-700">10+</div>
                                     <div className="text-gray-900 text-sm">Years Experience</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-500">2.5K+</div>
+                                    <div className="text-3xl font-bold text-blue-700">12.5K+</div>
                                     <div className="text-gray-900 text-sm">Happy Patients</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-500">98%</div>
+                                    <div className="text-3xl font-bold text-blue-700">99.99%</div>
                                     <div className="text-gray-900 text-sm">Success Rate</div>
                                 </div>
                             </div>

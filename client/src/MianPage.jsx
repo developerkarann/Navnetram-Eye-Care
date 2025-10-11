@@ -1,5 +1,6 @@
 import './App.css'
 import Carousel from './components/Carousel'
+import Doctors from './components/Doctors'
 import WhyChooseUs from './pages/choose/WhyChooseUs'
 import ContactPage from './pages/contact/ContactPage'
 import HomePage from './pages/home/HomePage'
@@ -13,6 +14,7 @@ const MianPage = () => {
       <Service />
       <ServicePage />
       <Testimonials />
+      <Doctors/>
       <Carousel />
       <WhyChooseUs />
       <ContactPage />

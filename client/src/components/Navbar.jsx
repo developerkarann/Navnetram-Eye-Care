@@ -19,7 +19,7 @@ const Navbar = () => {
             link: '/testimonials'
         },
         {
-            title: 'About Us',
+            title: 'Our doctors',
             link: '/about'
         },
         {

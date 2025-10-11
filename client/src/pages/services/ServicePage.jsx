@@ -5,7 +5,7 @@ const ServicePage = () => {
             title: " Cataract & Lens Surgery",
             description: "Achieve clear vision with painless microincision cataract surgery (MICS) and premium IOL implants, customized for your unique needs.",
             duration: "45 mins",
-            image: '/assest/services/cataract.jpg'
+            image: '/assest/services/cataract.png'
         },
         {
             title: "LASIK & Laser Vision correction",
