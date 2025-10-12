@@ -8,7 +8,7 @@ export default function Doctors() {
             name: "Dr. Rinky Agarwal",
             title: "Super-Specialised Ophthalmologist",
             image: '/assest/images/drRinkyWithLogo.jpg',
-            tags: ['MBBS Gold Medalist', 'AIIMS New Delhi', 'LHMC and MAMC/GNEC', 'MBBS', '100+ Publications']
+            tags: ['MBBS (Gold Medalist)', ' MD (AIIMS New Delhi)', 'DBB', 'MNAMS', 'Ex Sr. President (AIIMS, New Delhi)', ' Ex Asst. Prof. (LHMC, MAMC/GNEC, SIMS, NIMS)']
         },
         {
             name: "Dr. Nitin Gupta",
@@ -33,15 +33,15 @@ export default function Doctors() {
                                 return (
                                     <>
                                         <Link to='/about'>
-                                            <div key={index} class="  sm:w-[500px] min-h-140 md:max-h-140 rounded shadow-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
+                                            <div key={index} class="  sm:w-[500px] min-h-150 md:max-h-150 rounded shadow-2xl bg-blue-50 mb-5 hover:cursor-pointer hover:scale-105 duration-300">
                                                 <img src={doctor.image} alt="Surgery" class="w-full h-[370px] rounded object-cover" />
                                                 <div class="flex flex-col justify-center p-3 text-center ">
                                                     <h2 className="text-4xl font-bold text-gray-900 mb-2">{doctor.name}</h2>
                                                     <p className="text-2xl text-blue-900 font-semibold mb-3">{doctor.title}</p>
-                                                    <div className="flex text-white font-semibold flex-wrap gap-2 justify-center pt-2">
+                                                    <div className="flex text-gray-900 font-semibold flex-wrap gap-2 justify-center pt-2">
                                                         {
                                                             doctor.tags.map((item, i) => (
-                                                                <span className="bg-blue-600/90 px-4 py-1 rounded-full text-sm border-2 border-white">{item}</span>
+                                                                <span className="px-1 rounded-full text-lg ">{item},</span>
                                                             ))
                                                         }
                                                     </div>

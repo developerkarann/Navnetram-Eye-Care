@@ -38,9 +38,12 @@ export default function Footer() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* About Section */}
                         <div className="">
-                            <div>
-                                <img src="/logo.png" className='w-90' alt="" />
-                                {/* <p className="text-purple-100 text-sm">Advanced Eye Care</p> */}
+                            <div className='flex gap-5 items-center'>
+                                <img src="/logo01.png" className='w-20' alt="" />
+                                <div className="text">
+                                    <h1 className='text-gray-100 text-4xl'>NavNetram</h1>
+                                    <p className='text-gray-200 text-base tracking-widest'>Advanced Eye Care</p>
+                                </div>
                             </div>
                             <p className="text-gray-300 text-base py-5 leading-relaxed">
                                 Your eyes deserve the best care. At Navnetram Advanced Eye Care, we combine advanced technology with personalized treatment to protect your vision and support lifelong eye health

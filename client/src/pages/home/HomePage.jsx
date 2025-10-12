@@ -1,7 +1,5 @@
-import { Calendar, Menu, Stethoscope, X } from 'lucide-react';
-import { useState } from 'react';
 const HomePage = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    
 
     return (
         <>
@@ -11,8 +9,8 @@ const HomePage = () => {
             <section className="  md:px-20 md:pb-10  bg-gradient-to-r from-blue-100 to-white overflow-hidden">
                 <div className=" z-10   md:py-0">
 
-                    <div className="mainLogo mt-10 mb-8 md:hidden">
-                        <img src="/logo2.jpeg" className=' w-full md:hidden shadow' alt="" />
+                    <div className="mainLogo mt-10 mb-8 md:hidden px-2">
+                        <img src="/logo.png" className=' w-full md:hidden ' alt="" />
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center px-5">
@@ -23,10 +21,10 @@ const HomePage = () => {
 
                             <div className=" md:space-y-10 md:mt-30 ">
                                 <div className=' flex flex-col gap-5'>
-                                    <h1 className="text-5xl text-gray-800 lg:text-6xl font-bold ">
+                                    <h1 className=" text-[43px] sm:text-5xl text-gray-800 lg:text-6xl font-bold ">
                                         Dr. Rinky Agarwal
                                     </h1>
-                                    <h3 className=" text-blue-900 text-3xl md:text-4xl font-semibold  ">Expert Eye Care with Trust of AIIMS <br className='hidden md:block' /> <span>  (New Delhi) </span>  </h3>
+                                    <h3 className=" text-blue-900 text-3xl md:text-4xl font-semibold  ">Expert Eye Care with Trust of AIIMS, <span>  (New Delhi) </span>  </h3>
                                     <p className=" text-xl text-gray-900  pt-8 md:pt-5 leading-relaxed ">
                                         Navnetram Advanced Eye care is a medical facility co-structured by Dr Rinky Agarwal and Dr Nitin
                                         Gupta with goal of providing high quality, advanced and economical eye care.
