@@ -54,7 +54,7 @@ const ServicePage = () => {
     return (
         <>
             {/* Services Section */}
-            <section className="mb-8 relative px-2 md:px-10 bg-[#f0f0ff]" id='services'>
+            <section className="pb-8 relative px-2 md:px-10 bg-[#f0f0ff]" id='services'>
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white rounded-2xl"></div> */}
 
                 <div className="relative z-10 py-8 px-2">

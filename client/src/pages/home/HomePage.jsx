@@ -1,5 +1,13 @@
+import WhyChooseUs from "../choose/WhyChooseUs"
+import ContactPage from "../contact/ContactPage"
+import IntroPage from "../Intorduction/Service"
+import DoctorsPage from "../ourDoctors/DoctorsPage"
+import EquipmentPage from "../equipment/EquipmentPage"
+import ServicePage from "../services/ServicePage"
+import Testimonials from "../testimonials/Testimonials"
+
 const HomePage = () => {
-    
+
 
     return (
         <>
@@ -71,6 +79,14 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+
+            <IntroPage/>
+            <ServicePage />
+            <DoctorsPage/>
+            <Testimonials />
+             <EquipmentPage/>
+            <WhyChooseUs />
+            <ContactPage />
         </>
     )
 }

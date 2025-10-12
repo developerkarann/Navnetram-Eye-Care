@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Service = () => {
+const IntroPage = () => {
     return (
         <>
             <section className='service py-40 w-full px-3 md:px-10 bg-white' id='about'>
@@ -27,4 +27,4 @@ const Service = () => {
     )
 }
 
-export default Service
+export default IntroPage

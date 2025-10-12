@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Doctors() {
+export default function DoctorsPage() {
 
 
     const doctors = [
@@ -8,12 +8,12 @@ export default function Doctors() {
             name: "Dr. Rinky Agarwal",
             title: "Super-Specialised Ophthalmologist",
             image: '/assest/images/drRinkyWithLogo.jpg',
-            tags: ['MBBS (Gold Medalist)', ' MD (AIIMS New Delhi)', 'DBB', 'MNAMS', 'Ex Sr. President (AIIMS, New Delhi)', ' Ex Asst. Prof. (LHMC, MAMC/GNEC, SIMS, NIMS)']
+            tags: ['MBBS (Gold Medalist),', ' MD (AIIMS, New Delhi),', 'DNB,', 'MNAMS,', 'Ex Sr. Resident (AIIMS, New Delhi),', ' Ex Asst. Prof. (LHMC, MAMC/GNEC, SIMS, NIMS)']
         },
         {
             name: "Dr. Nitin Gupta",
-            title: "Medicine Physician",
-            tags: [" MBBS", "DNB", "FEBNM", "MANMS", "RSO-2"],
+            title: "Nuclear Medicine Physician",
+            tags: [" MBBS,", "DNB,", "FEBNM,", "MANMS,", "RSO-2"],
             image: '/assest/images/dr-nitin-gupta.jpg'
         },
     ];
@@ -25,8 +25,8 @@ export default function Doctors() {
                 <section className="pb-20 relative loadAnimate px-2 md:px-10  w-full bg-[#f0f0ff] py-5 " id='services'>
                     <div className="relative z-10 py-8 px-5 ">
                         <div className="text-center mb-20" >
-                            <h2 className=" text-4xl md:text-5xl text-gray-800 font-bold mb-4">About Our Doctors</h2>
-                            <div className="w-60 h-0.5 bg-blue-400 mx-auto mt-4 mb-5"></div>
+                            <h2 className=" text-4xl md:text-5xl text-gray-800 font-bold mb-4"> Our Doctors</h2>
+                            <div className="w-30 h-0.5 bg-blue-400 mx-auto mt-4 mb-5"></div>
                         </div>
                         <div className="flex  flex-col md:flex-row justify-center gap-15 place-items-center ">
                             {doctors.map((doctor, index) => {
@@ -41,7 +41,7 @@ export default function Doctors() {
                                                     <div className="flex text-gray-900 font-semibold flex-wrap gap-2 justify-center pt-2">
                                                         {
                                                             doctor.tags.map((item, i) => (
-                                                                <span className="px-1 rounded-full text-lg ">{item},</span>
+                                                                <span className="px-1 rounded-full text-lg ">{item}</span>
                                                             ))
                                                         }
                                                     </div>

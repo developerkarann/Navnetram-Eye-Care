@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-export default function Carousel() {
+export default function EquipmentPage() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState('right');
 
