@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaHeart, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaHeart, FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { Calendar, MailPlus, MapPinHouse, Phone } from 'lucide-react';
 
 export default function Footer() {
@@ -11,19 +11,12 @@ export default function Footer() {
         { name: 'Contact Us', href: '#contact' }
     ];
 
-    const services = [
-        { name: 'Web Development', href: '' },
-        { name: 'Backend Development', href: '' },
-        { name: 'API Integration', href: '' },
-        { name: 'Database Design', href: '' },
-        { name: 'Code Review', href: '' },
-        { name: 'Consulting', href: '' }
-    ];
-
     const socialLinks = [
-        { icon: FaInstagram, href: '#', label: 'Instagram', color: 'hover:text-sky-400' },
-        { icon: FaLinkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-400' },
-        { icon: FaTwitter, href: '#', label: 'Twitter', color: 'hover:text-sky-400' },
+        { icon: FaYoutube, href: 'https://www.youtube.com/@navnetram', label: 'Instagram', color: 'hover:text-sky-400' },
+        { icon: FaInstagram, href: 'https://www.instagram.com/navnetrumadvancedeye/?igsh=bWFxY211Y3BkdGNo#', label: 'Instagram', color: 'hover:text-sky-400' },
+        { icon: FaFacebook, href: 'https://www.facebook.com/share/1AjPWwv59P/', label: 'Instagram', color: 'hover:text-sky-400' },
+        { icon: FaLinkedin, href: 'https://www.linkedin.com/in/navnetram-advanced-eye-care-3766ba384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', label: 'LinkedIn', color: 'hover:text-blue-400' },
+        { icon: FaTwitter, href: 'https://x.com/navnetram64654?t=0LR6gfmdrPp249Hp_e9CAQ&s=08', label: 'Twitter', color: 'hover:text-sky-400' },
         { icon: FaEnvelope, href: 'mailto:dr.rinky@navnetram.com', label: 'Email', color: 'hover:text-sky-400' }
     ];
 
@@ -54,6 +47,7 @@ export default function Footer() {
                                         key={index}
                                         href={social.href}
                                         aria-label={social.label}
+                                        target='_blank'
                                         className={`text-white ${social.color} transition-colors duration-300 transform hover:scale-110`}
                                     >
                                         <social.icon size={30} />
